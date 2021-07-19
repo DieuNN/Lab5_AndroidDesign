@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Lab5_AndroidDesign</string>
+
+    <string-array name="color">
+        <item name="Red">Red</item>
+        <item name="Green">Green</item>
+        <item name="Blue">Blue</item>
+    </string-array>
 </resources>

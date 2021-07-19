@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Bai3"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    
+    <Button
+        android:text="Normal Dialog"
+        android:id="@+id/button_open_dialog1"
+        android:layout_width="220dp"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="List Dialog"
+        android:layout_width="220dp"
+        android:id="@+id/button_open_dialog2"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Radio Button Dialog"
+        android:id="@+id/button_open_dialog3"
+        android:layout_width="220dp"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Checkbox Dialog"
+        android:id="@+id/button_open_dialog4"
+        android:layout_width="220dp"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"/>
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.Bai1">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choose date"
+        app:endIconDrawable="@drawable/outline_event_24"
+
+        app:endIconMode="custom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Choose time"
+        app:endIconDrawable="@drawable/outline_alarm_24"
+        app:endIconMode="custom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edittext_time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
