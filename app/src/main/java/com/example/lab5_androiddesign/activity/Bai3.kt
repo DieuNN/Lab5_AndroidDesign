@@ -14,6 +14,7 @@ class Bai3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bai3)
 
+        // Normal Dialog
         button_open_dialog1.setOnClickListener {
             val builder = AlertDialog.Builder(this)
 
@@ -29,6 +30,7 @@ class Bai3 : AppCompatActivity() {
                     }).create().show()
         }
 
+        //List Dialog
         button_open_dialog2.setOnClickListener {
             val items = this.resources.getStringArray(R.array.color)
             AlertDialog.Builder(this)
@@ -42,6 +44,7 @@ class Bai3 : AppCompatActivity() {
                 }).create().show()
         }
 
+        //Radio button Dialog
         button_open_dialog3.setOnClickListener {
             val items = this.resources.getStringArray(R.array.color)
             AlertDialog.Builder(this)
@@ -58,6 +61,7 @@ class Bai3 : AppCompatActivity() {
                 .create().show()
         }
 
+        //Checkbox dialog
         button_open_dialog4.setOnClickListener {
             val items = this.resources.getStringArray(R.array.color)
             val checked = mutableListOf<Boolean>(false, false, false)

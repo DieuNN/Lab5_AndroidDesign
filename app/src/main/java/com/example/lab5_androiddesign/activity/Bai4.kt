@@ -20,11 +20,12 @@ class Bai4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bai4)
 
-
+        //Mapping
         val view = LayoutInflater.from(this).inflate(R.layout.custom_dialog, null)
         val username: EditText = view.findViewById(R.id.edittext_username)
         val password: EditText = view.findViewById(R.id.edittext_password)
 
+        // New alert dialog
         AlertDialog.Builder(this)
             .setView(view)
             .setPositiveButton("Đăng nhập", DialogInterface.OnClickListener { dialog, which -> let {
@@ -42,10 +43,10 @@ class Bai4 : AppCompatActivity() {
 
             })
             .setNegativeButton("Cancel", DialogInterface.OnClickListener { dialog, which ->
+                Toast.makeText(this, "Cancel", Toast.LENGTH_SHORT).show()
                 dialog.cancel()
                 finish()
             })
             .create().show()
-
     }
 }

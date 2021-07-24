@@ -16,6 +16,7 @@ class Bai1 : AppCompatActivity() {
         setContentView(R.layout.activity_bai1)
 
         // Set end icon on click listener for text input layout
+
         text_input_layout_date_picker.setEndIconOnClickListener {
             // Calendar.getInstance(), get day, month, year
             val calendar = Calendar.getInstance()
@@ -25,7 +26,7 @@ class Bai1 : AppCompatActivity() {
 
             // New date picker dialog
             val datePickerDialog = DatePickerDialog(this, { _, year, month, dayOfMonth -> let {
-                edittext_date_picker.setText("$dayOfMonth/$month/$year")
+                edittext_date_picker.setText("$dayOfMonth/${month +1 }/$year")
             } }, year, month, day)
             datePickerDialog.show()
         }
