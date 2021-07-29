@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Bai5::class.java))
         }
 
+        button_bai_login.setOnClickListener {
+            startActivity(Intent(this, LoginForm::class.java))
+        }
+
 
     }
 }

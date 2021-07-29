@@ -45,4 +45,11 @@
         android:layout_marginTop="16dp"
         android:text="Bài 5"/>
 
+    <Button
+        android:id="@+id/button_bai_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Form đăng nhập" />
+
 </LinearLayout>
